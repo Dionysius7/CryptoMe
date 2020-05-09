@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="#fff"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/introImg"
+                android:layout_centerHorizontal="true"
+                android:layout_width="300dp"
+                android:layout_height="300dp"/>
+            <TextView
+                android:textColor="#000"
+                android:layout_marginTop="30dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/introTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/introImg"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="TextView"/>
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="15dp"
+                android:id="@+id/introDesc"
+                android:maxLines="3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@+id/introTitle"
+                android:textSize="20dp"
+                android:text="Hello World"/>
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

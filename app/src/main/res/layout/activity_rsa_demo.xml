@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cryptobg"
+    android:padding="10dp"
+    tools:context=".Demo.RsaDemoActivity">
+
+    <TextView
+        android:id="@+id/abc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="RSA DEMO"
+        android:textColor="#FFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:text="Input Text :"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/abc" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:text="Output Text:"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputRSA" />
+
+    <EditText
+        android:id="@+id/inputRSA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Input Text"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="42dp" />
+
+    <EditText
+        android:id="@+id/outputRSA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Output Text"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <Button
+        android:id="@+id/btnRsaDecrypt"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:background="#fff"
+        android:text="Decrypt"
+        android:textColor="@color/colorpal3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnRsaEncrypt"
+        app:layout_constraintTop_toBottomOf="@+id/outputRSA" />
+
+    <Button
+        android:id="@+id/btnRsaEncrypt"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorpal3"
+        android:text="Encrypt"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toStartOf="@+id/btnRsaDecrypt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outputRSA" />
+
+    <ImageView
+        android:id="@+id/backRsaDemo"
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_keyboard_backspace_white_24dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnRsaDecrypt"
+        app:layout_constraintTop_toBottomOf="@+id/btnRsaDecrypt" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

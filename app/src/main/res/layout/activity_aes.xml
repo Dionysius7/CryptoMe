@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AES.AesActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/screen_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnnext"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tabBackground="@drawable/indicator_selector">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <Button
+        android:id="@+id/btnnext"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:background="@color/colorpal3"
+        android:text="Try Aes Demo"
+        android:textColor="#fff"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/tab_indicator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#000</color>
+
+    <color name="startColor">#08FF64</color>
+    <color name="endColor">#38ef78</color>
+
+    <color name="errorColor">#D61727</color>
+    <color name="textColor">#083b66</color>
+
+    <color name="colorpal1">#87ca93</color>
+    <color name="colorpal2">#23879c</color>
+    <color name="colorpal3">#153c66</color>
+    <color name="colorpal4">#bdbcbc</color>
+
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cryptome">
+
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/cryptoicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/cryptoicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Demo.AesDemoActivity"></activity>
+        <activity android:name=".Demo.RsaDemoActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".DemoActivity" />
+        <activity android:name=".RSA.RsaActivity" />
+        <activity android:name=".AES.AesActivity" />
+        <activity android:name=".SecurityActivity" />
+        <activity android:name=".IntroActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

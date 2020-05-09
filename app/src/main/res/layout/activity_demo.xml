@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cryptobg"
+    tools:context=".DemoActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/c1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/c2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/demoRsa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/rsatext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_arrow_forward_black_24dp"
+                android:drawablePadding="10dp"
+                android:layout_centerInParent="true"
+                android:text="RSA Demo"
+                android:textColor="@color/colorpal3"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:drawableRight="@drawable/ic_arrow_forward_black_24dp" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/c2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/demoAes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/aesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableEnd="@drawable/ic_arrow_forward_black_24dp"
+                android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+                android:drawablePadding="10dp"
+                android:text="AES Demo"
+                android:textColor="@color/colorpal3"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_keyboard_backspace_white_24dp"
+        app:layout_constraintEnd_toEndOf="@+id/c2"
+        app:layout_constraintTop_toBottomOf="@+id/c2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
